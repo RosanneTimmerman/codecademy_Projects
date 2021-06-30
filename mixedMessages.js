@@ -1,8 +1,7 @@
 //create three pieces of data
 firstMsg = ["I", "She", "He", "We"]
-secondMsg = ["hate", "loves", "despices", "believe in"]
+secondMsg = ["hate(s)", "love(s)", "despice(s)", "believe(s) in"]
 thirdMsg = ["chocolate", "pears", "fake friends", "deer", "instagram"]
-
 
 pickFirst = () => {
     randomNr = Math.floor(Math.random() * 4);
@@ -22,12 +21,14 @@ pickThird = () => {
     return thirdMsg[randomNr];
 }
 
-createMsg = () => {
-    return `${pickFirst()} ${pickSecond()} ${pickThird()}`
-}
 
-console.log(createMsg());
-//console.log(pickSecond());
-//console.log(pickThird());
+printNewMsg = () => {
+    newMsg = `${pickFirst()} ${pickSecond()} ${pickThird()}`
+    return newMsg;
+    }
+
+ 
+console.log(printNewMsg());
+
 
 
